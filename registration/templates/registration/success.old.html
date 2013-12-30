@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% load i18n staticfiles %}
+
+{% block title %}{% trans "Account created successfully" %}{% endblock %}
+
+{% block styles %}<link rel="stylesheet" type="text/css" href="{% static 'registration/css/base.css' %}" />{% endblock %}
+
+{% block content %}
+
+	<h4>Account created successfully <span class="glyphicon glyphicon-ok"></span></h4>
+    <a href="{% url 'registration:login' %}">{% trans "Sign in here" %}</a>
+
+{% endblock %}

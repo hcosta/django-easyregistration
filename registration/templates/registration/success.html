@@ -1,0 +1,20 @@
+{% load i18n staticfiles %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+    <head>
+        <title>{% trans "Account created successfully" %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'registration/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'registration/css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'registration/css/base.css' %}" />
+    </head>
+    <body>
+        
+        <div class="container">
+            <h4>Account created successfully <span class="glyphicon glyphicon-ok"></span></h4>
+    	    <a href="{% url 'registration:login' %}">{% trans "Sign in here" %}</a>
+        </div>
+
+        <script type="text/javascript" src="{% static 'registration/js/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'registration/js/bootstrap.min.js' %}"></script>
+
+    </body>
+</html>

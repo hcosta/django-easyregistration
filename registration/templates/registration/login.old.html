@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load i18n staticfiles %}
+
+{% block title %}{% trans "Sign in" %}{% endblock %}
+
+{% block styles %}<link rel="stylesheet" type="text/css" href="{% static 'registration/css/base.css' %}" />{% endblock %}
+
+{% block content %}
+
+    <form method="post" action="." class="form-signin" role="form">{% csrf_token %}
+        <h2 class="form-signin-heading">{% trans "Sign in" %}</h2>
+        {% if form.errors %}
+            <div class="alert alert-danger">{% trans "User or password don't match." %}</div>
+        {% endif %}
+        <input id="id_username" maxlength="254" name="username" type="text"  class="form-control {% if form.errors %}has-error{% endif %}" placeholder="{% trans "User" %}"/> 
+        <input id="id_password" name="password" type="password"  class="form-control {% if form.errors %}has-error{% endif %}" placeholder="{% trans "Password" %}"/> 
+        <button class="btn btn-lg btn-primary btn-block" type="submit">{% trans "Sign in" %}</button>
+        <br>{% trans "Don't have an account?" %} <a href="{% url 'registration:register' %}">{% trans "Sign up here" %}</a>
+    </form>
+    
+{% endblock %}

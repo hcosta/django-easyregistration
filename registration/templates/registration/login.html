@@ -1,0 +1,31 @@
+{% load i18n staticfiles %}<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+    <head>
+        <title>{% trans "Sign in" %}</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'registration/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'registration/css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'registration/css/base.css' %}" />
+    </head>
+    <body>
+
+        <div class="container">
+            <form method="post" action="." class="form-signin" role="form">{% csrf_token %}
+                <h2 class="form-signin-heading">{% trans "Sign in" %}</h2>
+                {% if form.errors %}
+                    <div class="alert alert-danger">{% trans "User or password don't match." %}</div>
+                {% endif %}
+
+                {% for field in form %}
+                    {{ field }}
+                {% endfor %}
+                    
+                <button class="btn btn-lg btn-primary btn-block" type="submit">{% trans "Sign in" %}</button>
+                <br>{% trans "Don't have an account?" %} <a href="{% url 'registration:register' %}">{% trans "Sign up here" %}</a>
+            </form>
+        </div>
+
+        <script type="text/javascript" src="{% static 'registration/js/jquery.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'registration/js/bootstrap.min.js' %}"></script>
+
+    </body>
+</html>
