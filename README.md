@@ -1,5 +1,5 @@
 =====
-Registration
+django-easyregistration
 =====
 
 Registration is a simple Django app to manage frontend users login/logout  
