@@ -35,4 +35,4 @@ Quick start
 
 4. Configure manually your preferred URLS in 'registration/config.py' file.
 
-5. Start the development server and visit http://127.0.0.1:8000/accounts/login/ or  create an account at http://127.0.0.1:8000/login/accounts/register/.
+5. Start the development server and visit http://127.0.0.1:8000/accounts/login/ or  create an account at http://127.0.0.1:8000/accounts/register/.
