@@ -1,7 +1,7 @@
 Django-easyregistration
 =======================
 
-** The easy way to manage frontend users auth and registration in `Django <http://www.djangoproject.com>`**
+**The easy way to manage frontend users auth and registration in `Django <http://www.djangoproject.com>`**
 
 Django-easyregistration is a simple Django app to manage frontend users login/logout and registration process, build with class based views and Twitter Bootstrap.
 
