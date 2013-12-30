@@ -10,10 +10,10 @@ Requirements
 
 * Django 1.5/1.6
 
-Releases
+Changes
 -----------
 
-* Django-easyregistration 0.1beta (December 31th, 2013): Unstable
+* Django-easyregistration 0.1beta (December 31th, 2013): Spanish localization added.
 
 Quick start
 -----------
