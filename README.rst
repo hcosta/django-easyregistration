@@ -32,7 +32,7 @@ Quick start
 
 2. Add "registration" to your INSTALLED_APPS setting like this::
 
-    .. code-block:: python
+.. code-block:: python
 
         INSTALLED_APPS = (
             ...
@@ -41,7 +41,7 @@ Quick start
 
 3. Include the registration URLconf in your project urls.py like this::
 
-    .. code-block:: python
+.. code-block:: python
 
         url(r'^accounts/', include('registration.urls')),
 
