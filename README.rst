@@ -30,7 +30,7 @@ Quick start
 
     $ python setup.py install
 
-2. Add "registration" to your INSTALLED_APPS setting like this:
+2. Add "registration" to your INSTALLED_APPS setting like this::
 
 .. code-block:: python
 
@@ -39,7 +39,7 @@ Quick start
           'registration',
       )
 
-3. Include the registration URLconf in your project urls.py like this:
+3. Include the registration URLconf in your project urls.py like this::
 
 .. code-block:: python
 
