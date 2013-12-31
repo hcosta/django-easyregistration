@@ -26,9 +26,8 @@ Changes
 Quick start
 -----------
 
-1. Copy 'registration' directory inside your project root or install it:
+1. Copy 'registration' directory inside your project root or install it::
 
-::
     $ python setup.py install
 
 2. Add "registration" to your INSTALLED_APPS setting like this:
