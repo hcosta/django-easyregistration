@@ -28,22 +28,22 @@ Quick start
 
 1. Copy 'registration' directory inside your project root or install it::
 
-$ python setup.py install
+    $ python setup.py install
 
 2. Add "registration" to your INSTALLED_APPS setting like this::
 
-.. code-block:: python
+    .. code-block:: python
 
-INSTALLED_APPS = (
-  ...
-  'registration',
-)
+        INSTALLED_APPS = (
+            ...
+            'registration',
+        )
 
 3. Include the registration URLconf in your project urls.py like this::
 
-.. code-block:: python
+    .. code-block:: python
 
-url(r'^accounts/', include('registration.urls')),
+        url(r'^accounts/', include('registration.urls')),
 
 4. Configure manually your preferred URLS in 'registration/config.py' file.
 
