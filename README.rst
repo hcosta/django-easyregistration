@@ -26,9 +26,9 @@ Changes
 Quick start
 -----------
 
-1. Copy 'registration' directory inside your project root or install it::
+1. Install it with pip in your env::
 
-    $ python setup.py install
+    $ pip install django-easyregistration
 
 2. Add "registration" to your INSTALLED_APPS setting like this::
 
