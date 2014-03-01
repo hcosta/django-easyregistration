@@ -64,7 +64,7 @@ class RegisterView(FormView):
         return super(RegisterView, self).form_valid(form)
 
     def get_success_url(self):
-        return reverse('registration:register-success')
+        return reverse('register-success')
 
 
 class RegisterSuccessView(TemplateView):
