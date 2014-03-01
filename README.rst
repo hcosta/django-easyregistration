@@ -28,7 +28,7 @@ Quick start
 
 1. Install it with pip in your env::
 
-    $ pip install django-easyregistration
+    $ pip install django-easyregistration==0.1beta
 
 2. Add "registration" to your INSTALLED_APPS setting like this::
 
