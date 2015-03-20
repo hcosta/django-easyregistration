@@ -7,10 +7,10 @@ Django-easyregistration is a simple Django app to manage frontend users login/lo
 
 Screenshots
 -----------
-.. image:: http://hcosta.info/site_media/uploads/portfolio/2013-12-django-easyregistration/screen1.png
+.. image:: http://blog.hcosta.info/portfolio/2013-12-django-easyregistration/screen1.png
    :align: center
 
-.. image:: http://hcosta.info/site_media/uploads/portfolio/2013-12-django-easyregistration/screen2.png
+.. image:: http://blog.hcosta.info/portfolio/2013-12-django-easyregistration/screen2.png
    :align: center
 
 Requirements
