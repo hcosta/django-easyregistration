@@ -13,10 +13,10 @@ Simple Django app to manage frontend users login/logout and registration process
 
 ## Quick start
 
-1. Install it with pip in your env::
+1. Install it with pip in your env:
 
 ```bash
-pip install django-easyregistration
+pipenv install -e git+https://github.com/hcosta/django-easyregistration#egg=registration
 ```
 
 2. Add `registration` to your `INSTALLED_APPS` settings:
@@ -32,11 +32,15 @@ INSTALLED_APPS = (
 
 ```python
 urlpatterns = [
-    .# .. 
+    # ...
 	path('accounts/', include('registration.urls')),
 ]
 ```
 
 4. Configure your preferred URLS in `registration/config.py` file.
 
-5. Start the development server and visit http://127.0.0.1:8000/accounts/login/ or create an account at http://127.0.0.1:8000/accounts/register/.
+5. Start the development server:
+
+* Login: http://127.0.0.1:8000/accounts/login/
+* Logout: http://127.0.0.1:8000/accounts/logout/
+* Register: http://127.0.0.1:8000/accounts/register/
