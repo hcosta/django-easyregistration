@@ -1,16 +1,14 @@
-from django.conf.urls import patterns, url
-from registration import views
+from django.urls import path
+from . import views
 
-urlpatterns = patterns('',
+urlpatterns = [
 
-                       # sessions
-                       url(r'^login/$', views.LoginView.as_view(), name='login'),
-                       url(r'^logout/$', views.LogoutView.as_view(), name='logout'),
+   # sessions
+   path('login/', views.LoginView.as_view(), name='login'),
+   path('logout/', views.LogoutView.as_view(), name='logout'),
 
-                       # register
-                       url(r'^register/$', views.RegisterView.as_view(), name='register'),
-                       url(r'^register/success/$',
-                           views.RegisterSuccessView.as_view(
-                           ), name='register-success'),
+   # register
+   path('register/', views.RegisterView.as_view(), name='register'),
+   path('register/success/',views.RegisterSuccessView.as_view(), name='register-success'),
 
-                       )
+]
